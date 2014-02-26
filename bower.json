@@ -1,0 +1,10 @@
+{
+  "name": "less-modules",
+  "version": "0.1.0",
+  "authors": [
+    "(Adam Kudrna <adam@adamkudrna.cz>)"
+  ],
+  "description": "LESS modules",
+  "license": "MIT",
+  "homepage": "www.adamkudrna.cz"
+}
