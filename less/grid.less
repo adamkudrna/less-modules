@@ -1,0 +1,48 @@
+//
+// Grid
+//
+// @version:   0.2.0, updated on 2014-02-24
+// @author:    Adam Kudrna
+//
+// @link http://www.barrelny.com/blog/text-align-justify-and-rwd
+// --------------------------------------------------
+
+// Justified grid of inline blocks.
+// Requires definition of grid cells and spacers.
+//
+// Example:
+// .nav {
+//     .grid(33%);
+// }
+//
+// jQuery filter using this technique:
+// @link http://mixitup.io/
+
+
+// The grid
+.grid(@grid-item-width: 25%, @root-font-size-absolute: 16px) {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 0.1px; // avoid unwanted spacing
+	line-height: 1;
+	text-align: justify;
+	list-style: none; // remove list bullets
+
+	// Add line break to enable justifying of the last line
+	&:after {
+		content: '';
+		width: 100%;
+		display: inline-block;
+	}
+
+	// Grid cells
+	> * {
+		width: @grid-item-width;
+		display: inline-block;
+		vertical-align: top;
+		font-size: @root-font-size-absolute; // fallback
+		font-size: 1rem;
+		text-align: left;
+	}
+}
