@@ -28,13 +28,13 @@
 
 
 .responsive-background(@image: 'default', @tablet: 768px, @desktop: 992px, @path: '../images/') {
-	background-image: url('@{path}@{image}_xs@2x.jpg');
+    background-image: url('@{path}@{image}_xs@2x.jpg');
 
-	@media screen and (min-width: @tablet) {
-		background-image: url('@{path}@{image}_sm@2x.jpg');
-	}
+    @media screen and (min-width: @tablet) {
+        background-image: url('@{path}@{image}_sm@2x.jpg');
+    }
 
-	@media screen and (min-width: @desktop) {
-		background-image: url('@{path}@{image}_lg@2x.jpg');
-	}
+    @media screen and (min-width: @desktop) {
+        background-image: url('@{path}@{image}_lg@2x.jpg');
+    }
 }
