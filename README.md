@@ -9,9 +9,23 @@ LESS modules can be loaded in your LESS styles as a complete package:
 
 … or as standalone modules:
 
+    @import "less-modules/less/caret";
     @import "less-modules/less/grid";
     @import "less-modules/less/responsive-background";
     @import "less-modules/less/sticky-footer";
+
+## Caret
+Draws an arrow using only CSS properties.
+
+Example LESS:
+
+    .dropdown-handle {
+        .caret();
+    }
+
+    .next {
+        .caret-right(#fff, 1.2em, 1em);
+    }
 
 ## Grid
 Creates a justified grid of inline blocks.
