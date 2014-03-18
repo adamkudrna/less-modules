@@ -16,7 +16,7 @@
 
 
 // The grid
-.grid(@grid-item-width: 22%, @root-font-size: 16px) {
+.grid(@grid-item-width: 22%, @root-font-size: 16px, @line-height: 1.5) {
     display: block;
     margin: 0;
     padding: 0;
@@ -39,6 +39,7 @@
         vertical-align: top;
         font-size: @root-font-size; // fallback
         font-size: 1rem;
+        line-height: @line-height;
         text-align: left;
     }
 }

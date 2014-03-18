@@ -61,6 +61,7 @@ margins are automatically adjusted to fit the container so everything works, no 
 |-----------------------|--------------------|---------------------------------------------------------------------|
 | **grid-item-width**   | 22%                | Width of a grid item; any unit can be used                          |
 | **root-font-size**    | 16px               | Root font size in pixels used for `rem` fallback in legacy browsers |
+| **line-height**       | 1.5                | Line height restored in grid items                                  |
 
 ### Basic Example
 ```css
