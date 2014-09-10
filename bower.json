@@ -1,10 +1,25 @@
 {
   "name": "less-modules",
-  "version": "0.2.1",
+  "description": "LESS modules",
+  "version": "0.3.0",
+  "homepage": "https://github.com/adamkudrna/less-modules",
   "authors": [
     "(Adam Kudrna <adam@adamkudrna.cz>)"
   ],
-  "description": "LESS modules",
   "license": "MIT",
-  "homepage": "www.adamkudrna.cz"
+  "keywords": [
+    "less",
+    "modules",
+    "css",
+    "responsive",
+    "front-end",
+    "web",
+    "grid"
+  ],
+  "main": [
+    "./less/less-modules.less"
+  ],
+  "ignore": [
+    ".*"
+  ]
 }
