@@ -71,11 +71,24 @@ margins are automatically adjusted to fit the container so everything works, no 
 ```
 
 ### Adjusting Number of Items per Line
-Grid item width is 22% by default (which results in 4 items per line) and can be easily adjusted:
+Grid item width is 22% by default (which results in 4 items per line) and can be easily adjusted on first usage:
 
 ```css
 .gallery {
     .grid(33%);
+}
+```
+
+Default column sets can also be applied:
+
+```css
+.gallery {
+    .grid();
+    .grid-cols-3();
+
+    @media screen and (min-width: 768px) {
+        .grid-cols-5();
+    }
 }
 ```
 

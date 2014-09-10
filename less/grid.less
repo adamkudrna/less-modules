@@ -11,6 +11,14 @@
 //     .grid(20%);
 // }
 //
+// Default column sets can also be applied.
+//
+// Example:
+// .gallery {
+//     .grid();
+//     .grid-cols-5();
+// }
+//
 // jQuery filter using this technique:
 // http://mixitup.io/
 
@@ -41,5 +49,27 @@
         font-size: 1rem;
         line-height: @line-height;
         text-align: left;
+    }
+}
+
+// Grid columns
+.grid-cols-2() {
+    > * {
+        width: 48.8%;
+        margin-bottom: 1em;
+    }
+}
+
+.grid-cols-4() {
+    > * {
+        width: 24%;
+        margin-bottom: 1em;
+    }
+}
+
+.grid-cols-5() {
+    > * {
+        width: 19.1%;
+        margin-bottom: 1em;
     }
 }
